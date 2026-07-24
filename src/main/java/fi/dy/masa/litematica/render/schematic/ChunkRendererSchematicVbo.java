@@ -671,6 +671,9 @@ public class ChunkRendererSchematicVbo
             {
                 if (clientHasAir || (this.ignoreClientWorldFluids && stateClient.isLiquid()))
                 {
+                    if (MinecraftClient.getInstance().player.isHolding(stateSchematic.getBlock().asItem())) {
+                        return OverlayType.MISSING_HOLDING;
+                    }
                     return OverlayType.MISSING;
                 }
                 // Wrong block
@@ -700,6 +703,11 @@ public class ChunkRendererSchematicVbo
                     overlayColor = Configs.Colors.SCHEMATIC_OVERLAY_COLOR_MISSING.getColor();
                 }
                 break;
+            case MISSING_HOLDING:
+                if (Configs.Visuals.SCHEMATIC_OVERLAY_TYPE_MISSING_HOLDING.getBooleanValue())
+                {
+                    overlayColor = Configs.Colors.SCHEMATIC_OVERLAY_COLOR_MISSING_HOLDING.getColor();
+                }
             case EXTRA:
                 if (Configs.Visuals.SCHEMATIC_OVERLAY_TYPE_EXTRA.getBooleanValue())
                 {

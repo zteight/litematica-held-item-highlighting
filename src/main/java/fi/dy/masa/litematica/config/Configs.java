@@ -193,6 +193,7 @@ public class Configs implements IConfigHandler
         public static final ConfigBoolean       SCHEMATIC_OVERLAY_RENDER_THROUGH    = new ConfigBoolean("schematicOverlayRenderThroughBlocks", false, "If enabled, then the schematic overlay will be rendered\nthrough blocks. This is probably only useful once you are\nfinished building and want to see any errors easier");
         public static final ConfigBoolean       SCHEMATIC_OVERLAY_TYPE_EXTRA        = new ConfigBoolean("schematicOverlayTypeExtra",       true, "Enables the schematic overlay for extra blocks");
         public static final ConfigBoolean       SCHEMATIC_OVERLAY_TYPE_MISSING      = new ConfigBoolean("schematicOverlayTypeMissing",     true, "Enables the schematic overlay for missing blocks");
+        public static final ConfigBoolean       SCHEMATIC_OVERLAY_TYPE_MISSING_HOLDING = new ConfigBoolean("schematicOverlayTypeMissingHolding",     true, "Enables the schematic overlay for missing blocks which match the currently held block");
         public static final ConfigBoolean       SCHEMATIC_OVERLAY_TYPE_WRONG_BLOCK  = new ConfigBoolean("schematicOverlayTypeWrongBlock",  true, "Enables the schematic overlay for wrong blocks");
         public static final ConfigBoolean       SCHEMATIC_OVERLAY_TYPE_WRONG_STATE  = new ConfigBoolean("schematicOverlayTypeWrongState",  true, "Enables the schematic overlay for wrong states");
         public static final ConfigBoolean       SCHEMATIC_VERIFIER_BLOCK_MODELS     = new ConfigBoolean("schematicVerifierUseBlockModels", false, "Forces using blocks models for everything in the Schematic Verifier\nresult list. Normally item models are used for anything\nthat has an item, and block models are only used for blocks\nthat don't have an item, plus for Flower Pots to see the contained item.");
@@ -306,6 +307,7 @@ public class Configs implements IConfigHandler
         public static final ConfigColor REBUILD_REPLACE_OVERLAY_COLOR       = new ConfigColor("schematicRebuildReplaceOverlayColor","#4CF0A010", "The color of Schematic Rebuild mode's replace selector overlay");
         public static final ConfigColor SCHEMATIC_OVERLAY_COLOR_EXTRA       = new ConfigColor("schematicOverlayColorExtra",         "#4CFF4CE6", "The color of the blocks overlay for extra blocks");
         public static final ConfigColor SCHEMATIC_OVERLAY_COLOR_MISSING     = new ConfigColor("schematicOverlayColorMissing",       "#2C33B3E6", "The color of the blocks overlay for missing blocks");
+        public static final ConfigColor SCHEMATIC_OVERLAY_COLOR_MISSING_HOLDING = new ConfigColor("schematicOverlayColorMissingHolding", "#00ff0000", "The color of the blocks overlay for missing blocks that match the currently held block");
         public static final ConfigColor SCHEMATIC_OVERLAY_COLOR_WRONG_BLOCK = new ConfigColor("schematicOverlayColorWrongBlock",    "#4CFF3333", "The color of the blocks overlay for wrong blocks");
         public static final ConfigColor SCHEMATIC_OVERLAY_COLOR_WRONG_STATE = new ConfigColor("schematicOverlayColorWrongState",    "#4CFF9010", "The color of the blocks overlay for wrong block states");
 

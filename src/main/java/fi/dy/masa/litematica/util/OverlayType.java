@@ -4,9 +4,10 @@ public enum OverlayType
 {
     NONE        (0),
     MISSING     (1),
-    EXTRA       (2),
-    WRONG_STATE (3),
-    WRONG_BLOCK (4);
+    MISSING_HOLDING (2),
+    EXTRA       (3),
+    WRONG_STATE (4),
+    WRONG_BLOCK (5);
 
     private final int priority;
 
