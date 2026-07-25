@@ -224,6 +224,7 @@ public class Configs implements IConfigHandler
                 SCHEMATIC_OVERLAY_RENDER_THROUGH,
                 SCHEMATIC_OVERLAY_TYPE_EXTRA,
                 SCHEMATIC_OVERLAY_TYPE_MISSING,
+                SCHEMATIC_OVERLAY_TYPE_MISSING_HOLDING,
                 SCHEMATIC_OVERLAY_TYPE_WRONG_BLOCK,
                 SCHEMATIC_OVERLAY_TYPE_WRONG_STATE,
                 SCHEMATIC_VERIFIER_BLOCK_MODELS,
@@ -307,7 +308,7 @@ public class Configs implements IConfigHandler
         public static final ConfigColor REBUILD_REPLACE_OVERLAY_COLOR       = new ConfigColor("schematicRebuildReplaceOverlayColor","#4CF0A010", "The color of Schematic Rebuild mode's replace selector overlay");
         public static final ConfigColor SCHEMATIC_OVERLAY_COLOR_EXTRA       = new ConfigColor("schematicOverlayColorExtra",         "#4CFF4CE6", "The color of the blocks overlay for extra blocks");
         public static final ConfigColor SCHEMATIC_OVERLAY_COLOR_MISSING     = new ConfigColor("schematicOverlayColorMissing",       "#2C33B3E6", "The color of the blocks overlay for missing blocks");
-        public static final ConfigColor SCHEMATIC_OVERLAY_COLOR_MISSING_HOLDING = new ConfigColor("schematicOverlayColorMissingHolding", "#00ff0000", "The color of the blocks overlay for missing blocks that match the currently held block");
+        public static final ConfigColor SCHEMATIC_OVERLAY_COLOR_MISSING_HOLDING = new ConfigColor("schematicOverlayColorMissingHolding", "#FFFF0000", "The color of the blocks overlay for missing blocks that match the currently held block");
         public static final ConfigColor SCHEMATIC_OVERLAY_COLOR_WRONG_BLOCK = new ConfigColor("schematicOverlayColorWrongBlock",    "#4CFF3333", "The color of the blocks overlay for wrong blocks");
         public static final ConfigColor SCHEMATIC_OVERLAY_COLOR_WRONG_STATE = new ConfigColor("schematicOverlayColorWrongState",    "#4CFF9010", "The color of the blocks overlay for wrong block states");
 
@@ -320,6 +321,7 @@ public class Configs implements IConfigHandler
                 REBUILD_REPLACE_OVERLAY_COLOR,
                 SCHEMATIC_OVERLAY_COLOR_EXTRA,
                 SCHEMATIC_OVERLAY_COLOR_MISSING,
+                SCHEMATIC_OVERLAY_COLOR_MISSING_HOLDING,
                 SCHEMATIC_OVERLAY_COLOR_WRONG_BLOCK,
                 SCHEMATIC_OVERLAY_COLOR_WRONG_STATE
         );

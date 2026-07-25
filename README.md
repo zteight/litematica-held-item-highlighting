@@ -1,8 +1,7 @@
 This fork is of version 0.17.5-rc.1 for 1.20.4
 
 It adds the feature of highlighting the currently held block in the schematic.
-As of right now you cant toggle this off, and the color is set to red.
-The colors also don't automatically update when you switch what item you're holding,
+The colors don't automatically update when you switch what item you're holding,
 they only update when a block update happens in a chunk, or if you toggle schematic rendering off and then back on again.
 
 Litematica
